@@ -2,7 +2,7 @@
   "name": "my-third-challenge",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "default": "index.js",
   "scripts": {
     "build": "parcel build index.html --dist-dir ./dist"
   },
