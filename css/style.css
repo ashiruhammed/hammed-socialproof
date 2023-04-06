@@ -1,0 +1,172 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(0, 0%, 100%);
+  margin: 0;
+  font-family: League Spartan;
+  font-size: 1.125rem;
+  background-image: url(../images/bg-pattern-top-mobile.svg),
+    url(../images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top, bottom;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.rate {
+  margin-bottom: 30px;
+}
+
+.rated {
+  border: 1px solid white;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  line-height: 2px;
+  padding-bottom: 12px;
+  background: hsl(300, 24%, 96%);
+}
+
+.comment {
+  margin-bottom: 70px;
+}
+
+.commented {
+  border: 1px solid white;
+  margin-bottom: 14px;
+  padding: 30px 20px 30px 20px;
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 10px;
+  color: white;
+  line-height: 25px;
+}
+
+.header,
+.rate {
+  text-align: center;
+}
+
+h1 {
+  font-weight: 700;
+  line-height: 1.95rem;
+  padding: 35px 10px 3px 10px;
+  color: hsl(300, 43%, 22%);
+}
+
+h1 ~ p {
+  color: hsl(303, 10%, 53%);
+  line-height: 25px;
+  margin-bottom: 45px;
+}
+
+p {
+  font-weight: 400;
+  margin: 0;
+}
+
+.rate p {
+  margin-bottom: 8px;
+  padding-bottom: 5px;
+  color: hsl(300, 43%, 22%);
+}
+
+.rated img {
+  margin-bottom: 15px;
+  padding-top: 15px;
+}
+
+.commented img {
+  border-radius: 100%;
+  width: 45px;
+}
+
+.custom-det + p {
+  margin-top: 30px;
+}
+
+.custom-det {
+  margin-left: 67px;
+  margin-top: -55px;
+}
+
+span {
+  color: hsl(333, 80%, 67%);
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: url(../images/bg-pattern-top-desktop.svg),
+      url(../images/bg-pattern-bottom-desktop.svg);
+  }
+
+  .content {
+    padding: 5rem;
+  }
+
+  .block-one {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  h1 {
+    padding-right: 100px;
+  }
+
+  .rated {
+    width: 400px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .one {
+    margin-left: -66px;
+  }
+
+  .two {
+    margin-left: -33px;
+  }
+
+  .rated img {
+    margin: 6px 5px 15px 0;
+  }
+
+  .rated p {
+    margin-top: 16px;
+    margin-left: 30px;
+  }
+
+  .header {
+    text-align: start;
+    width: 700px;
+    padding-right: 150px;
+    margin-right: 200px;
+  }
+
+  .comment {
+    display: flex;
+    position: relative;
+  }
+
+  .commented {
+    margin-left: 7px;
+    margin-right: 13px;
+  }
+
+  .sec-comm {
+    position: relative;
+    top: 20px;
+  }
+  .third-comm {
+    position: relative;
+    top: 40px;
+  }
+}
